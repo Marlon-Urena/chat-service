@@ -1,10 +1,11 @@
-module messageService
+module chatService
 
 go 1.18
 
 require (
 	cloud.google.com/go/firestore v1.6.1
 	firebase.google.com/go/v4 v4.7.1
+	github.com/evanphx/json-patch/v5 v5.6.0
 	github.com/georgysavva/scany v0.3.0
 	github.com/go-chi/chi/v5 v5.0.7
 	github.com/go-chi/cors v1.2.0

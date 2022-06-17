@@ -1,4 +1,4 @@
-package myMiddleware
+package middleware
 
 import (
 	"context"
@@ -7,8 +7,7 @@ import (
 	"net/http"
 )
 
-// FirebaseConfig /* FirebaseConfig HTTP myMiddleware setting Firebase Auth and Firestore
-//on request's context
+// FirebaseConfig /* HTTP middleware setting Firebase Auth and Firestore
 func FirebaseConfig(firebaseApp *firebase.App) func(next http.Handler) http.Handler {
 	auth, err := firebaseApp.Auth(context.Background())
 	if err != nil {
